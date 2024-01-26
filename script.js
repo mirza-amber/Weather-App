@@ -3,7 +3,7 @@ async function main() {
 
     async function get_weather(c_en) {
 
-        let info_received = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${c_en}&appid=a9a00f44e38376ddbf41ca481b388336&units=metric`)
+        let info_received = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${c_en}&appid={API_ID}&units=metric`)
         let json_conv = await info_received.json()
         // console.log(json_conv)
         // console.log(json_conv.main.temp)
